@@ -1,0 +1,17 @@
+package Ejemplo;
+
+import redis.clients.jedis.Jedis;
+
+public class RedisList {
+
+	public static void main(String[] args) {
+		Jedis jedis = new Jedis("localhost");
+
+		jedis.lpush("EjemploList", "Redis");
+		jedis.lpush("EjemploList", "MongoDB");
+		jedis.lpush("EjemploList", "Cassandra");
+		jedis.lpush("EjemploList", "CouchDB");
+		jedis.lpush("EjemploList", "Patata");
+	}
+
+}

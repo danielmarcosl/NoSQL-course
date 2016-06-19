@@ -1,0 +1,22 @@
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class InsertTable {
+
+	public static void main(String[] args) {
+		Cluster cluster;
+		Session session;
+		String query = "CREATE TABLE employee(emp_id int PRIMARY KEY, name varchar, city varchar, salary int, phone int)";
+
+		cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+		session = cluster.connect("demodb");
+
+		session.execute(query);
+
+		System.out.println("Table created");
+
+		session.close();
+		cluster.close();
+	}
+
+}

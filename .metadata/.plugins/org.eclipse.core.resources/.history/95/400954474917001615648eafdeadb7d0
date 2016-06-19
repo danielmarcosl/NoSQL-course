@@ -1,0 +1,10 @@
+import org.lightcouch.CouchDbClient;
+
+public class CouchClient {
+
+	public static void main(String[] args) {
+		CouchDbClient dbClient = new CouchDbClient("couchdb.properties");
+
+	}
+
+}

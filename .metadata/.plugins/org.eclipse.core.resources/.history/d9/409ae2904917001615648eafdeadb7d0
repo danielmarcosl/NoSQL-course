@@ -1,0 +1,13 @@
+import org.lightcouch.CouchDbClient;
+import org.lightcouch.DesignDocument;
+
+public class CouchClient {
+
+	public static void main(String[] args) {
+		CouchDbClient dbClient = new CouchDbClient("couchdb.properties");
+		DesignDocument designDocument;
+
+		designDocument = dbClient.design().getFromDb("ejemplo");
+	}
+
+}

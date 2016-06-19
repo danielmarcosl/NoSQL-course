@@ -1,0 +1,17 @@
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class ClienteCassandra {
+
+	public static void main(String[] args) {
+		Cluster cluster;
+		Session session;
+
+		cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+		session = cluster.connect("demodb");
+
+		session.execute("INSERT INTO persona (DNI, first_name, last_name, sex, nacionality, civil_state, birth_date) VALUES (122, 'Juan', 'Cordoba', 'Masculino', 'Espanola', 'Soltero', 1424109603234)");
+
+		session.execute("INSERT INTO persona (DNI, first_name, last_name, sex, nacionality, civil_state, birth_date) VALUES (123, 'Marta', 'Ariza', 'Femenino', 'Catalana', 'Casada', 1424109603234)");
+	}
+}

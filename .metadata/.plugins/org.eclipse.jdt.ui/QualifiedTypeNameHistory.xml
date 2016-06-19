@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.datastax.driver.core.Row"/>
+<fullyQualifiedTypeName name="com.datastax.driver.core.Cluster"/>
+<fullyQualifiedTypeName name="com.datastax.driver.core.Session"/>
+<fullyQualifiedTypeName name="com.datastax.driver.core.ResultSet"/>
+<fullyQualifiedTypeName name="org.lightcouch.Document"/>
+<fullyQualifiedTypeName name="org.lightcouch.CouchDbClient"/>
+<fullyQualifiedTypeName name="org.lightcouch.DesignDocument"/>
+<fullyQualifiedTypeName name="org.lightcouch.Response"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>
